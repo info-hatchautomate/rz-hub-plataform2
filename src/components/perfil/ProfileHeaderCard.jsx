@@ -37,7 +37,7 @@ export default function ProfileHeaderCard({ user }) {
             </div>
           </div>
           <div className="flex gap-3 pb-2">
-            <button className="flex items-center gap-2 bg-slate-50 border border-slate-200 text-slate-500 px-4 py-2 rounded-full text-sm font-bold hover:border-primary hover:text-primary transition-all">
+            <button className="btn-base btn-primary btn-sm">
               <span className="material-symbols-outlined text-[18px]">edit</span> Editar Perfil
             </button>
             <button className="btn-base btn-primary btn-sm">
