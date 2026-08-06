@@ -5,9 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   base: "/rz-hub-platform/",
-  plugins: [
-    react(),
-    tsconfigPaths(),
-    tailwindcss(),
-  ],
+  plugins: [react(), tsconfigPaths(), tailwindcss()],
 });
