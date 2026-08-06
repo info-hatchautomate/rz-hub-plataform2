@@ -1,6 +1,8 @@
 import Badge from "../common/Badge.jsx";
 import LockedTeaser from "../common/LockedTeaser.jsx";
+import Button from "../common/Button.jsx";
 import { resolvePhoto } from "@/lib/assetFallbacks";
+
 
 /**
  * AlumniCard — tarjeta para el directorio de alumni egresados.
