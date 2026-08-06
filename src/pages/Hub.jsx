@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { mockAlumni } from "@/data/mockAlumni";
 import { mockMentors } from "@/data/mockMentors";
 import { mockPerks } from "@/data/mockPerks";
