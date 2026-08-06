@@ -55,6 +55,7 @@ Paso a paso
    - Verificar que `bun run dev` levanta el preview en localhost.
 
 Entregables
+
 - `package.json` limpio para Vite clásico.
 - `vite.config.ts` con tu configuración exacta.
 - `index.html`, `src/main.tsx`, `src/App.tsx`.
