@@ -54,8 +54,8 @@ export default function Calendario() {
                 onClick={() => setActiveFilter(f)}
                 className={
                   active
-                    ? "bg-slate-800 text-white px-8 py-2.5 rounded-full font-bold text-sm transition-all hover:bg-slate-900 shadow-lg shadow-slate-200"
-                    : "bg-slate-100 text-slate-600 px-8 py-2.5 rounded-full font-bold text-sm transition-all hover:bg-slate-200"
+                    ? "btn-base btn-primary btn-sm !px-8"
+                    : "btn-base btn-subtle btn-sm !px-8"
                 }
               >
                 {f}

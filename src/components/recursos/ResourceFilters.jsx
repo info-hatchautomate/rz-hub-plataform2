@@ -16,7 +16,7 @@ export default function ResourceFilters({ active, onChange }) {
             onClick={() => onChange(f.value)}
             className={
               isActive
-                ? "bg-primary text-white px-6 py-2 rounded-full font-bold text-sm shadow-md shadow-primary/20 transition-transform active:scale-95"
+                ? "btn-base btn-primary btn-sm !px-6"
                 : "bg-white text-slate-500 hover:text-slate-800 hover:bg-slate-50 border border-slate-200 px-6 py-2 rounded-full font-bold text-sm transition-all"
             }
           >

@@ -71,10 +71,10 @@ export default function Recursos() {
           Zapopan.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="bg-primary text-white px-10 py-4 rounded-2xl font-black text-lg shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto">
+          <button className="btn-base btn-primary btn-lg w-full sm:w-auto">
             Compartir un recurso
           </button>
-          <button className="bg-white text-primary border-2 border-primary px-10 py-4 rounded-2xl font-black text-lg hover:bg-primary/5 transition-all w-full sm:w-auto">
+          <button className="btn-base btn-outline btn-lg w-full sm:w-auto">
             Ver todos los recursos
           </button>
         </div>

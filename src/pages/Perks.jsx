@@ -18,7 +18,7 @@ export default function Perks() {
   return (
     <div className="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Hero */}
-      <section className="relative mb-24 overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dim p-12 md:p-20 text-on-primary">
+      <section className="relative mb-24 overflow-hidden rounded-xl bg-brand-gradient p-12 md:p-20 text-on-primary">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary rounded-full opacity-20 blur-3xl" />
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-[#26C6DA] rounded-full opacity-20 blur-3xl" />
         <div className="relative z-10 max-w-3xl">
@@ -112,10 +112,10 @@ export default function Perks() {
             Si tu empresa u organización quiere conectar con egresados de Reto Zapopan, escríbenos.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="bg-slate-800 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-900 transition-all w-full sm:w-auto shadow-lg shadow-slate-200">
+            <button className="btn-base btn-primary btn-lg w-full sm:w-auto">
               Ser Aliado
             </button>
-            <button className="bg-white text-slate-800 border border-slate-200 px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all w-full sm:w-auto">
+            <button className="btn-base btn-outline btn-lg w-full sm:w-auto">
               Ver todos los beneficios
             </button>
           </div>

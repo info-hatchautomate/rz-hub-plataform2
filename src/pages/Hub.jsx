@@ -64,7 +64,7 @@ export default function Hub() {
           <div className="flex flex-wrap gap-4">
             <Link
               to="/perfil"
-              className="bg-white text-primary px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform"
+              className="btn-base bg-white text-primary border-2 border-white hover:bg-primary-dim hover:text-white hover:border-primary-dim"
             >
               Mi Perfil
             </Link>
