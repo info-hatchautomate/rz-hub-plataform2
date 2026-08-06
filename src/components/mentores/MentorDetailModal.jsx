@@ -108,7 +108,7 @@ export default function MentorDetailModal({ mentor, onClose }) {
             </div>
             <button
               type="button"
-              className="bg-slate-800 text-white px-6 py-3 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-slate-900 transition-all shadow-lg shrink-0"
+              className="btn-base btn-primary btn-sm shrink-0"
             >
               <span className="material-symbols-outlined text-lg">calendar_month</span>
               Agendar Mentoría

@@ -90,7 +90,7 @@ export default function PerkDetailModal({ perk, onClose }) {
               </div>
               <button
                 onClick={copyCode}
-                className="bg-white border border-slate-200 text-slate-600 hover:text-primary hover:border-primary px-5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 shadow-sm shrink-0"
+                className="btn-base btn-primary btn-sm shrink-0"
               >
                 <span className="material-symbols-outlined text-[18px]">
                   {copied ? "check" : "content_copy"}
