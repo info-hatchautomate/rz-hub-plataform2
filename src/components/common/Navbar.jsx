@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               to="/perfil"
-              className="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-primary-dim hover:scale-105 transition-all shadow-md shadow-primary/20"
+              className="btn-base btn-primary btn-sm !px-6"
             >
               Mi perfil
             </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={open}
-            className="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-primary-dim hover:scale-105 transition-all shadow-md shadow-primary/20"
+            className="btn-base btn-primary btn-sm !px-6"
           >
             Ingresar
           </button>
