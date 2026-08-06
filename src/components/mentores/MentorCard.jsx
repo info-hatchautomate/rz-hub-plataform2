@@ -1,6 +1,8 @@
 import { styleFor } from "./roleStyles.js";
 import LockedTeaser from "../common/LockedTeaser.jsx";
+import Button from "../common/Button.jsx";
 import { resolvePhoto } from "@/lib/assetFallbacks";
+
 
 /**
  * MentorCard — recibe `mentor` y `onViewProfile(mentor)`.
