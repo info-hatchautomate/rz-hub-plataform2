@@ -22,9 +22,8 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
   const s = styleFor(roleType);
 
   return (
-    <article
-      className={`bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-surface-container-high ${s.hoverBorder} transition-all group`}
-    >
+    <article className="card-lift bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-surface-container-high group">
+
       <div className="h-48 overflow-hidden relative">
         <img
           alt={fullName}
