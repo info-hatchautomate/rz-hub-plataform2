@@ -14,12 +14,13 @@ export default function CurrentCohortCard({ alumnus }) {
   } = alumnus;
 
   return (
-    <div className="bg-surface-container-lowest rounded-lg overflow-hidden group hover:translate-y-[-8px] transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(230,24,118,0.12)]">
+    <div className="card-lift bg-surface-container-lowest rounded-lg overflow-hidden group border border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
       <div className="relative h-48">
         <img alt={fullName} src={photoUrl} className="w-full h-full object-cover" />
-        <div className="absolute top-4 right-4 bg-secondary-container text-on-secondary-container text-[10px] font-black px-3 py-1 rounded-full shadow-sm">
+        <div className="absolute top-4 right-4 bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full shadow-sm">
           EN CURSO
         </div>
+
       </div>
       <div className="p-6 space-y-4">
         <div>

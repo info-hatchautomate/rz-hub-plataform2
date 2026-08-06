@@ -22,7 +22,7 @@ export default function AlumniCard({ alumnus, onViewProfile, locked = false, onU
   } = alumnus;
 
   return (
-    <div className="bg-surface-container-lowest rounded-lg overflow-hidden group hover:translate-y-[-8px] transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(182,0,81,0.12)]">
+    <div className="card-lift bg-surface-container-lowest rounded-lg overflow-hidden group border border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
       <div className="relative h-48">
         <img
           alt={fullName}
@@ -52,13 +52,10 @@ export default function AlumniCard({ alumnus, onViewProfile, locked = false, onU
           </p>
         </div>
         <div className="pt-4 flex items-center justify-between border-t border-surface-container-high">
-          <button
-            type="button"
-            onClick={() => onViewProfile?.(alumnus)}
-            className="bg-primary text-white px-4 py-2 rounded-full text-xs font-bold hover:bg-primary-dim transition-colors"
-          >
+          <Button type="button" size="sm" onClick={() => onViewProfile?.(alumnus)}>
             Ver Perfil
-          </button>
+          </Button>
+
           <span className="text-[10px] font-bold text-outline uppercase tracking-widest">
             {programType}
           </span>
