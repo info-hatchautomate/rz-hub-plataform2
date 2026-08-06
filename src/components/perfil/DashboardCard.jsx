@@ -5,7 +5,7 @@ export default function DashboardCard({ startup, memberSince }) {
   const sector = startup?.sectorTags?.[0]?.replace(/^\S+\s/, "") || "—";
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+    <div className="card-lift bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
       <h2 className="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
         <span className="material-symbols-outlined text-primary">dashboard</span> Dashboard
       </h2>

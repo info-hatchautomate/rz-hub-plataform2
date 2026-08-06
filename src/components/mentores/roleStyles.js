@@ -1,32 +1,32 @@
 /**
- * Estilos por roleType, siguiendo exactamente las clases del mock.
- * (Los comentarios "Yellow/Orange/Turquoise" del HTML original son etiquetas
- * descriptivas; los tokens reales de Tailwind son los que se usan aquí.)
+ * Estilos por roleType — todos comparten la paleta rosa de marca
+ * (#e61876 / #a91054) para mantener el sistema homologado.
+ * Se diferencian sólo por intensidad, nunca por matiz.
  */
 export const ROLE_STYLES = {
   Mentor: {
-    badge: "bg-tertiary-container text-on-tertiary-container",
-    accent: "text-tertiary",
-    accentBg: "bg-tertiary/10",
-    accentBorder: "border-tertiary",
-    hoverBorder: "hover:border-tertiary-fixed",
-    backPanel: "bg-tertiary text-white",
+    badge: "bg-primary text-white",
+    accent: "text-primary",
+    accentBg: "bg-primary/10",
+    accentBorder: "border-primary",
+    hoverBorder: "",
+    backPanel: "bg-primary text-white",
   },
   Aliado: {
-    badge: "bg-[#2563eb] text-white",
-    accent: "text-blue-600",
-    accentBg: "bg-blue-500/10",
-    accentBorder: "border-blue-500",
-    hoverBorder: "hover:border-blue-500",
-    backPanel: "bg-blue-600 text-white",
+    badge: "bg-primary-dim text-white",
+    accent: "text-primary-dim",
+    accentBg: "bg-primary-dim/10",
+    accentBorder: "border-primary-dim",
+    hoverBorder: "",
+    backPanel: "bg-primary-dim text-white",
   },
   Tallerista: {
-    badge: "bg-secondary-container text-on-secondary-container",
-    accent: "text-secondary",
-    accentBg: "bg-secondary/10",
-    accentBorder: "border-secondary",
-    hoverBorder: "hover:border-secondary",
-    backPanel: "bg-secondary text-white",
+    badge: "bg-primary/80 text-white",
+    accent: "text-primary",
+    accentBg: "bg-primary/10",
+    accentBorder: "border-primary/70",
+    hoverBorder: "",
+    backPanel: "bg-gradient-to-br from-primary to-primary-dim text-white",
   },
 };
 

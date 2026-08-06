@@ -1,7 +1,7 @@
 const categoryStyles = {
-  "Validación": { pill: "bg-warning-container text-on-warning-container", emoji: "" },
-  "Crecimiento": { pill: "bg-secondary-container text-on-secondary-container", emoji: "" },
-  "Escalamiento": { pill: "bg-purple-100 text-purple-700", emoji: "" },
+  "Validación": { pill: "bg-primary/10 text-primary", emoji: "" },
+  "Crecimiento": { pill: "bg-primary/10 text-primary", emoji: "" },
+  "Escalamiento": { pill: "bg-primary/10 text-primary", emoji: "" },
 };
 
 const formatIcons = {
@@ -32,7 +32,7 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
   const isAlumni = resource.contributorType === "alumni";
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm hover:shadow-xl transition-shadow flex flex-col group relative overflow-hidden">
+    <div className="card-lift bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm flex flex-col group relative overflow-hidden">
       <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-10 group-hover:scale-150 transition-transform" />
 
       <div className="mb-4 flex justify-between items-start">
@@ -49,7 +49,7 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
 
       <div className="flex items-center gap-3 bg-slate-50 p-3 rounded-2xl mb-6 border border-slate-100">
         {isAlumni ? (
-          <div className="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-xs font-bold">
+          <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">
             {initials(resource.contributorDisplayName)}
           </div>
         ) : (
@@ -73,7 +73,7 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
         <div className="flex gap-2">
           <button
             onClick={() => onPreview(resource)}
-            className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-slate-200 hover:text-slate-800 transition-colors"
+            className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
             title="Vista Previa"
           >
             <span className="material-symbols-outlined text-[20px]">visibility</span>
@@ -81,7 +81,7 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
           <a
             href={resource.fileUrl}
             download
-            className="bg-slate-800 text-white px-4 py-2 rounded-full text-xs font-bold hover:bg-primary transition-colors flex items-center gap-2"
+            className="btn-base btn-primary btn-sm"
           >
             Descargar
           </a>

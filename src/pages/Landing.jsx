@@ -54,13 +54,13 @@ export default function Landing() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={unlock}
-                className="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-primary/30 hover:bg-primary-dim transition-all"
+                className="btn-base btn-primary"
               >
                 Ingresar al Hub
               </button>
               <a
                 href="#alumni"
-                className="bg-white text-slate-800 border border-slate-200 px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-all"
+                className="btn-base btn-outline"
               >
                 Explorar la comunidad
               </a>
@@ -142,7 +142,7 @@ export default function Landing() {
 
       {/* CTA FINAL */}
       <section className="max-w-5xl mx-auto px-6 md:px-12 mt-16">
-        <div className="bg-gradient-to-br from-primary to-primary-dim rounded-[2.5rem] p-12 md:p-16 text-white text-center shadow-xl">
+        <div className="bg-brand-gradient rounded-[2.5rem] p-12 md:p-16 text-white text-center shadow-xl">
           <h2 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
             ¿Ya eres parte del Reto Zapopan?
           </h2>
@@ -151,7 +151,7 @@ export default function Landing() {
           </p>
           <button
             onClick={unlock}
-            className="bg-white text-primary px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform"
+            className="btn-base bg-white text-primary border-2 border-white hover:bg-primary-dim hover:text-white hover:border-primary-dim btn-lg"
           >
             Ingresar al Hub
           </button>

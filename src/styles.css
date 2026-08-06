@@ -33,6 +33,91 @@
 }
 
 
+@layer utilities {
+  /* ---- Botones homologados (rosa de marca #e61876 / hover #a91054) ---- */
+  .btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.875rem 1.75rem;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
+    cursor: pointer;
+  }
+  .btn-base:active {
+    transform: scale(0.97);
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 10px 24px -8px color-mix(in srgb, var(--color-primary) 55%, transparent);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-dim);
+    border-color: var(--color-primary-dim);
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  .btn-outline:hover {
+    background-color: var(--color-primary-dim);
+    border-color: var(--color-primary-dim);
+    color: #ffffff;
+  }
+
+  .btn-subtle {
+    background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color: var(--color-primary);
+    border: 2px solid transparent;
+  }
+  .btn-subtle:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
+  }
+
+  .btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .btn-lg {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* ---- Hover homologado de cards: se elevan + tinte rosa ---- */
+  .card-lift {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease,
+      border-color 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-8px);
+    background-color: color-mix(in srgb, var(--color-primary) 5%, #ffffff);
+    border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+    box-shadow: 0 20px 40px rgba(230, 24, 118, 0.14);
+  }
+
+  /* ---- Fondo hero rosa de marca ---- */
+  .bg-brand-gradient {
+    background-image: linear-gradient(135deg, #e61876 0%, #a91054 100%);
+  }
+}
+
 
 /*
  * Design system definition.

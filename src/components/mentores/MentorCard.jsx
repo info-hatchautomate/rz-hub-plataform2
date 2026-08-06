@@ -1,6 +1,8 @@
 import { styleFor } from "./roleStyles.js";
 import LockedTeaser from "../common/LockedTeaser.jsx";
+import Button from "../common/Button.jsx";
 import { resolvePhoto } from "@/lib/assetFallbacks";
+
 
 /**
  * MentorCard — recibe `mentor` y `onViewProfile(mentor)`.
@@ -20,9 +22,8 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
   const s = styleFor(roleType);
 
   return (
-    <article
-      className={`bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-surface-container-high ${s.hoverBorder} transition-all group`}
-    >
+    <article className="card-lift bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-surface-container-high group">
+
       <div className="h-48 overflow-hidden relative">
         <img
           alt={fullName}
@@ -51,13 +52,10 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
           ))}
         </div>
         <div className="flex items-center justify-between pt-4 border-t border-surface-container">
-          <button
-            type="button"
-            onClick={() => onViewProfile?.(mentor)}
-            className="bg-primary text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-primary-dim transition-colors shadow-lg shadow-primary/20"
-          >
+          <Button type="button" size="sm" onClick={() => onViewProfile?.(mentor)}>
             Ver Perfil
-          </button>
+          </Button>
+
           <div className="flex gap-2">
             <a
               href="#"
@@ -69,7 +67,7 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
             <a
               href="#"
               aria-label={`LinkedIn de ${fullName}`}
-              className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-[#0077b5] hover:bg-[#0077b5] hover:text-white transition-all"
+              className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
             >
               <span className="material-symbols-outlined text-[18px]">link</span>
             </a>
