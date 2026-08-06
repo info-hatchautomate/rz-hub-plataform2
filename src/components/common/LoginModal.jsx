@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "react-router-dom";
 import { useFakeAuth } from "@/lib/useFakeAuth";
 
 const LoginModalContext = createContext(null);
@@ -46,7 +46,7 @@ export default function LoginModal({ open, onClose }) {
     e.preventDefault();
     login();
     onClose?.();
-    navigate({ to: "/hub" });
+    navigate("/hub");
   };
 
   return (
