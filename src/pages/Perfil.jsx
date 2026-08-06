@@ -41,7 +41,7 @@ export default function Perfil() {
                 <span className="material-symbols-outlined text-primary">upload_file</span>
                 Recursos Subidos
               </h2>
-              <button className="flex items-center gap-2 bg-primary/10 text-primary text-xs font-bold px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all">
+              <button className="btn-base btn-subtle btn-sm">
                 <span className="material-symbols-outlined text-[16px]">add</span> Subir Recurso
               </button>
             </div>

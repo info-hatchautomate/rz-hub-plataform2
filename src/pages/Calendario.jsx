@@ -27,7 +27,7 @@ export default function Calendario() {
     <div className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
       {/* Hero */}
       <section className="mb-16">
-        <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dim p-12 md:p-20 text-on-primary">
+        <div className="relative overflow-hidden rounded-xl bg-brand-gradient p-12 md:p-20 text-on-primary">
           <div className="relative z-10 max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-2 leading-[1.1]">
               Calendario RZ Hub
@@ -72,7 +72,7 @@ export default function Calendario() {
 
       {/* Closure */}
       <section className="mt-24 text-center">
-        <div className="inline-block p-1 bg-gradient-to-r from-primary via-secondary to-tertiary rounded-full">
+        <div className="inline-block p-1 bg-brand-gradient rounded-full">
           <div className="bg-white px-10 py-4 rounded-full">
             <p className="text-xl font-bold text-slate-500 italic">
               "Ver que hay eventos próximos fortalece la sensación de que el ecosistema está vivo."

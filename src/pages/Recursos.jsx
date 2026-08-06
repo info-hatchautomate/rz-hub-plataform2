@@ -16,7 +16,7 @@ export default function Recursos() {
   return (
     <div className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
       {/* Hero */}
-      <section className="relative mb-24 overflow-hidden rounded-xl bg-primary p-12 lg:p-20 shadow-2xl">
+      <section className="relative mb-24 overflow-hidden rounded-xl bg-brand-gradient p-12 lg:p-20 shadow-2xl">
         <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-widest mb-6">
