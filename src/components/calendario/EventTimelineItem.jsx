@@ -1,4 +1,5 @@
 import LockedTeaser from "../common/LockedTeaser.jsx";
+import Button from "../common/Button.jsx";
 
 const MONTHS = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
 
@@ -26,10 +27,14 @@ function metaLabel(event) {
   return fmtTime(event.startDatetime);
 }
 
-export default function EventTimelineItem({ event, statusLabel = "Próximamente", locked = false, onUnlock }) {
+export default function EventTimelineItem({
+  event,
+  statusLabel = "Próximamente",
+  locked = false,
+  onUnlock,
+}) {
   if (locked) return <LockedTeaser variant="event" onUnlock={onUnlock} />;
   const { day, month } = fmtDate(event.startDatetime);
-  const color = event.colorTheme || "#1e40af";
 
   return (
     <div className="relative flex flex-col md:flex-row gap-8 items-start group">
@@ -38,31 +43,25 @@ export default function EventTimelineItem({ event, statusLabel = "Próximamente"
         <span className="text-4xl font-black text-slate-500 block">
           {month} {day}
         </span>
-        <span
-          className="font-bold uppercase tracking-widest text-sm"
-          style={{ color }}
-        >
+        <span className="font-bold uppercase tracking-widest text-sm text-primary">
           {statusLabel}
         </span>
       </div>
 
       {/* Mobile marker */}
       <div className="md:hidden flex items-center gap-4 mb-2">
-        <span className="text-2xl font-black" style={{ color }}>
+        <span className="text-2xl font-black text-primary">
           {month} {day}
         </span>
-        <span className="h-px flex-grow bg-slate-200" />
+        <span className="h-px flex-grow bg-primary/20" />
       </div>
 
       {/* Card */}
-      <div className="flex-grow bg-white p-8 rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+      <div className="card-lift flex-grow bg-white p-8 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.02)] border border-slate-100">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span
-                className="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
-                style={{ backgroundColor: `${color}1A`, color }}
-              >
+              <span className="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 text-primary">
                 {event.eventType}
               </span>
               <span className="flex items-center gap-1 text-slate-500 text-sm font-medium">
@@ -73,13 +72,10 @@ export default function EventTimelineItem({ event, statusLabel = "Próximamente"
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">{event.title}</h3>
             <p className="text-slate-500 text-lg">{event.description}</p>
           </div>
-          <button
-            className="text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all shrink-0"
-            style={{ backgroundColor: color }}
-          >
+          <Button variant="primary" className="shrink-0">
             Registrarse
             <span className="material-symbols-outlined">arrow_forward</span>
-          </button>
+          </Button>
         </div>
       </div>
     </div>
