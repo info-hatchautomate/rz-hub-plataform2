@@ -15,8 +15,8 @@ import Recursos from "./pages/Recursos.jsx";
 
 export default function App() {
   return (
-    <LoginModalProvider>
-      <HashRouter>
+    <HashRouter>
+      <LoginModalProvider>
         <div className="min-h-screen bg-surface font-body text-on-surface flex flex-col">
           <Navbar />
 
@@ -35,7 +35,7 @@ export default function App() {
 
           <Footer />
         </div>
-      </HashRouter>
-    </LoginModalProvider>
+      </LoginModalProvider>
+    </HashRouter>
   );
 }
