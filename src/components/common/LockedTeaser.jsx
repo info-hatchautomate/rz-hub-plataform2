@@ -56,7 +56,7 @@ export default function LockedTeaser({ variant = "alumni", onUnlock }) {
       <div className="absolute inset-0 flex items-center justify-center bg-slate-50/40 backdrop-blur-[1px]">
         <button
           onClick={onUnlock}
-          className="flex items-center gap-2 bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg hover:bg-primary transition-colors"
+          className="btn-base btn-primary btn-sm"
         >
           <span className="material-symbols-outlined text-sm">{v.icon}</span>
           {v.label}

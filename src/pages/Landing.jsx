@@ -151,7 +151,7 @@ export default function Landing() {
           </p>
           <button
             onClick={unlock}
-            className="btn-base bg-white text-primary border-2 border-white hover:bg-primary-dim hover:text-white hover:border-primary-dim btn-lg"
+            className="btn-base btn-on-brand btn-lg"
           >
             Ingresar al Hub
           </button>

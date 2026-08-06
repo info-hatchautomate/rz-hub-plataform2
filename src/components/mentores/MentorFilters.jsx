@@ -42,8 +42,8 @@ export default function MentorFilters({ onFilterChange }) {
               onClick={() => update({ tab })}
               className={
                 active
-                  ? "px-6 py-2 rounded-full bg-surface-container-lowest text-on-surface font-bold shadow-sm transition-all text-sm"
-                  : "px-6 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all text-sm font-medium"
+                  ? "btn-base btn-primary btn-sm !px-6"
+                  : "btn-base btn-subtle btn-sm !px-6"
               }
             >
               {tab}
