@@ -67,7 +67,7 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
             <a
               href="#"
               aria-label={`LinkedIn de ${fullName}`}
-              className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-[#0077b5] hover:bg-[#0077b5] hover:text-white transition-all"
+              className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
             >
               <span className="material-symbols-outlined text-[18px]">link</span>
             </a>
