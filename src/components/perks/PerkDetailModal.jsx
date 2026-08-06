@@ -111,7 +111,7 @@ export default function PerkDetailModal({ perk, onClose }) {
                 href={perk.externalLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-white px-8 py-3.5 rounded-full text-sm font-bold flex items-center gap-2 hover:shadow-xl hover:shadow-primary/30 transition-all shrink-0"
+                className="btn-base btn-primary shrink-0"
               >
                 {perk.externalLinkText || "Ir al portal"}
                 <span className="material-symbols-outlined text-[20px]">open_in_new</span>

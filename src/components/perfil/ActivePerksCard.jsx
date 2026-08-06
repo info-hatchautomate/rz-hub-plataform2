@@ -1,6 +1,6 @@
 export default function ActivePerksCard({ perks = [] }) {
   return (
-    <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+    <div className="card-lift bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
       <h3 className="text-sm font-black text-slate-800 mb-4 flex items-center gap-2">
         <span className="material-symbols-outlined text-primary text-[20px]">loyalty</span>
         Perks Activos
