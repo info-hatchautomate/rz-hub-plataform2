@@ -52,13 +52,10 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
           ))}
         </div>
         <div className="flex items-center justify-between pt-4 border-t border-surface-container">
-          <button
-            type="button"
-            onClick={() => onViewProfile?.(mentor)}
-            className="bg-primary text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-primary-dim transition-colors shadow-lg shadow-primary/20"
-          >
+          <Button type="button" size="sm" onClick={() => onViewProfile?.(mentor)}>
             Ver Perfil
-          </button>
+          </Button>
+
           <div className="flex gap-2">
             <a
               href="#"
