@@ -24,13 +24,13 @@ export default function CurrentCohortCard({ alumnus }) {
       </div>
       <div className="p-6 space-y-4">
         <div>
-          <span className="text-[10px] font-extrabold text-secondary tracking-widest uppercase bg-secondary-container/20 px-2 py-1 rounded-md">
+          <span className="text-[10px] font-extrabold text-primary tracking-widest uppercase bg-primary/10 px-2 py-1 rounded-md">
             Generación {generationYear}
           </span>
           <h3 className="text-xl font-bold text-on-surface mt-2">{fullName}</h3>
         </div>
         <div className="space-y-1">
-          <p className="text-sm font-semibold text-secondary">{startupName}</p>
+          <p className="text-sm font-semibold text-primary">{startupName}</p>
           <p className="text-xs text-on-surface-variant flex items-center gap-1">
             {industryIcon ? (
               <span className="material-symbols-outlined text-sm">{industryIcon}</span>
@@ -42,7 +42,7 @@ export default function CurrentCohortCard({ alumnus }) {
           <div className="flex gap-3">
             <a
               href="#"
-              className="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-colors"
+              className="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
               aria-label={`Contactar a ${fullName}`}
             >
               <span className="material-symbols-outlined text-[18px]">mail</span>

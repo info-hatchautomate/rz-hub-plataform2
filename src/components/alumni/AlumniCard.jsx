@@ -37,13 +37,13 @@ export default function AlumniCard({ alumnus, onViewProfile, locked = false, onU
       </div>
       <div className="p-6 space-y-4">
         <div>
-          <span className="text-[10px] font-extrabold text-primary tracking-widest uppercase bg-primary-container/20 px-2 py-1 rounded-md">
+          <span className="text-[10px] font-extrabold text-primary tracking-widest uppercase bg-primary/10 px-2 py-1 rounded-md">
             Reto Zapopan {generationYear}
           </span>
           <h3 className="text-xl font-bold text-on-surface mt-2">{fullName}</h3>
         </div>
         <div className="space-y-1">
-          <p className="text-sm font-semibold text-secondary">{startupName}</p>
+          <p className="text-sm font-semibold text-primary">{startupName}</p>
           <p className="text-xs text-on-surface-variant flex items-center gap-1">
             {industryIcon ? (
               <span className="material-symbols-outlined text-sm">{industryIcon}</span>
