@@ -16,8 +16,7 @@ export default function FeaturedEventHero({ event }) {
   if (!event) return null;
 
   return (
-    <div className="relative group max-w-6xl">
-      <div className="absolute -inset-1 rounded-[2.5rem] bg-brand-gradient blur opacity-20 group-hover:opacity-35 transition duration-1000" />
+    <div className="relative max-w-6xl">
       <div className="card-lift relative bg-white rounded-[2.5rem] p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-slate-100">
         <div className="w-full md:w-[40%] aspect-[4/3] md:aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-100">
           <img
