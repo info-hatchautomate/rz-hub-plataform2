@@ -109,7 +109,7 @@
     font-size: 1.125rem;
   }
 
-  /* ---- Hover homologado de cards: se elevan + tinte rosa ---- */
+  /* ---- Hover homologado de cards: se elevan + tinte rosa + sombra rosa fuerte ---- */
   .card-lift {
     transition:
       transform 0.3s ease,
@@ -119,9 +119,9 @@
   }
   .card-lift:hover {
     transform: translateY(-8px);
-    background-color: color-mix(in srgb, var(--color-primary) 5%, #ffffff);
+    background-color: color-mix(in srgb, var(--color-primary) 6%, transparent);
     border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
-    box-shadow: 0 20px 40px rgba(230, 24, 118, 0.14);
+    box-shadow: 0 24px 48px rgba(230, 24, 118, 0.28);
   }
 
   /* ---- Fondo hero rosa de marca ---- */

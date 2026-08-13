@@ -28,7 +28,7 @@ export default function MentorCard({ mentor, onViewProfile, locked = false, onUn
         <img
           alt={fullName}
           src={resolvePhoto(photoUrl)}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-cover"
         />
         <div
           className={`absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg ${s.badge}`}

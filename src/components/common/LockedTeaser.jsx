@@ -36,7 +36,7 @@ export default function LockedTeaser({ variant = "alumni", onUnlock }) {
 
   return (
     <div
-      className={`relative bg-white rounded-3xl border border-slate-200 p-6 overflow-hidden ${v.height}`}
+      className={`card-lift relative bg-white rounded-3xl border border-slate-200 p-6 overflow-hidden ${v.height}`}
     >
       {/* Blurred skeleton content */}
       <div className="[filter:blur(5px)] select-none pointer-events-none space-y-3">

@@ -32,8 +32,8 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
   const isAlumni = resource.contributorType === "alumni";
 
   return (
-    <div className="card-lift bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm flex flex-col group relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-10 group-hover:scale-150 transition-transform" />
+    <div className="card-lift bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm flex flex-col relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-10" />
 
       <div className="mb-4 flex justify-between items-start">
         <span className={`${style.pill} text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full`}>
@@ -42,7 +42,7 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
         <span className="material-symbols-outlined text-slate-300 text-3xl">{icon}</span>
       </div>
 
-      <h3 className="text-xl font-bold mb-2 text-slate-800 group-hover:text-primary transition-colors">
+      <h3 className="text-xl font-bold mb-2 text-slate-800">
         {resource.title}
       </h3>
       <p className="text-slate-500 text-sm mb-6 flex-1">{resource.description}</p>
