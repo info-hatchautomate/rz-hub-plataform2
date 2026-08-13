@@ -4,7 +4,7 @@ import Button from "../common/Button.jsx";
 export default function PerkCard({ perk, onOpen, locked = false, onUnlock }) {
   if (locked) return <LockedTeaser variant="perk" onUnlock={onUnlock} />;
   return (
-    <div className="card-lift bg-white rounded-3xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between relative group">
+    <div className="card-lift bg-white rounded-lg p-6 border border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between relative group">
       <div className="space-y-4">
         <div className="flex justify-between items-start">
           <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-primary/10 text-primary">

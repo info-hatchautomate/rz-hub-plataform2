@@ -119,7 +119,7 @@
   }
   .card-lift:hover {
     transform: translateY(-8px);
-    background-color: color-mix(in srgb, var(--color-primary) 6%, transparent);
+    background-color: color-mix(in srgb, var(--color-primary) 6%, #fff);
     border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
     box-shadow: 0 24px 48px rgba(230, 24, 118, 0.28);
   }

@@ -32,8 +32,8 @@ export default function ResourceCard({ resource, onPreview, locked = false, onUn
   const isAlumni = resource.contributorType === "alumni";
 
   return (
-    <div className="card-lift bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm flex flex-col relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-10" />
+    <div className="card-lift bg-white rounded-lg border border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.03)] p-6 flex flex-col group">
+
 
       <div className="mb-4 flex justify-between items-start">
         <span className={`${style.pill} text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full`}>
