@@ -62,7 +62,7 @@ export default function Landing() {
                 href="#alumni"
                 className="btn-base btn-outline"
               >
-                Explorar la comunidad
+                Explorar la comunidad 
               </a>
             </div>
           </div>
